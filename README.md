@@ -3,12 +3,21 @@
 ![MCP Server](https://img.shields.io/badge/MCP-Server-blue)
 ![Version](https://img.shields.io/badge/version-2.0.0-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
+[![smithery badge](https://smithery.ai/badge/@aindreyway/mcp-codex-keeper)](https://smithery.ai/server/@aindreyway/mcp-codex-keeper)
 
 An intelligent MCP server that serves as a guardian of development knowledge, providing AI assistants with curated access to latest documentation and best practices.
 
 <a href="https://glama.ai/mcp/servers/bo39uifs3k"><img width="380" height="200" src="https://glama.ai/mcp/servers/bo39uifs3k/badge" alt="mcp-codex-keeper MCP server" /></a>
 
 ## 🚀 Quick Start
+
+### Installing via Smithery
+
+To install Aindreyway Codex Keeper for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@aindreyway/mcp-codex-keeper):
+
+```bash
+npx -y @smithery/cli install @aindreyway/mcp-codex-keeper --client claude
+```
 
 ### Prerequisites
 

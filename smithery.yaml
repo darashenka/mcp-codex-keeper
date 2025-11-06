@@ -1,0 +1,23 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - nodeOptions
+      - npmConfigCacheMax
+    properties:
+      nodeOptions:
+        type: string
+        default: --max-old-space-size=256
+        description: Options for Node.js execution environment.
+      npmConfigCacheMax:
+        type: string
+        default: "1024000000"
+        description: Maximum cache size for npm.
+  commandFunction:
+    # A function that produces the CLI command to start the MCP on stdio.
+    |-
+    (config) => ({command:'node',args:['build/index.js'],env:{NODE_OPTIONS:config.nodeOptions,npm_config_cache_max:config.npmConfigCacheMax}})
